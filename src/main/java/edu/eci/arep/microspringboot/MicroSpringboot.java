@@ -4,6 +4,7 @@
 
 package edu.eci.arep.microspringboot;
 
+import static edu.eci.arep.microspringboot.HTTPServer.loadRestControllers;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.net.URISyntaxException;
@@ -14,8 +15,9 @@ import java.net.URISyntaxException;
  */
 public class MicroSpringboot {
 
-    public static void main(String[] args) throws IOException, URISyntaxException, IllegalAccessException, InvocationTargetException, ClassNotFoundException {
+    public static void main(String[] args) throws IOException, URISyntaxException, IllegalAccessException, InvocationTargetException, ClassNotFoundException, Exception {
         System.out.println("Starting MicroSpringBoot:");
-        HTTPServer.startServer(args);
+        HTTPServer.startServer("edu.eci.arep.microspringboot");
+        
     }
 }

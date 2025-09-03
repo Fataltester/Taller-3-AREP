@@ -9,6 +9,7 @@ import edu.eci.arep.microspringboot.annotations.RestController;
 import edu.eci.arep.microspringboot.annotations.RequestParam;
 import java.util.concurrent.atomic.AtomicLong;
 
+// se aplica el concepto de IoC, no definimos como se crean los objetos, solo definimos lo que queremos que exista, el framework se encarga de crear objetos y de sus métodos
 @RestController
 public class GreetingController {
     private static final String template = "Hello, %s!";
